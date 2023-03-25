@@ -49,7 +49,7 @@
                 <i class="fa-solid fa fa-user fa-3x" ></i></a>
 
             <ul class="dropdown-menu" style="margin-right: 100px;">
-                <li><a class="dropdown-item" href="./login&register/login.jsp">Login</a></li>
+                <li><a class="dropdown-item" href="../seller/login.jsp">Login</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Change Account</a></li>
