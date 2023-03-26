@@ -20,6 +20,9 @@
 
 <%@include file="include/footer.jsp"%>
 
+
+
+
 <%--<%@include file="login&register/login.jsp"%>--%>
 
 
