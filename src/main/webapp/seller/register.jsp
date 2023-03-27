@@ -30,12 +30,12 @@
 
                                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
-                                <form action="register" class="mx-1 mx-md-4">
+                                <form action="../register" class="mx-1 mx-md-4" method="post">
 
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
-                                            <input type="text" id="username" class="form-control" />
+                                            <input type="text" name="username" id="username" class="form-control" />
                                             <label class="form-label" for="username">Username</label>
                                         </div>
                                     </div>
@@ -43,14 +43,14 @@
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
-                                            <input type="text" id="password" class="form-control" />
+                                            <input type="text" name="password" id="password" class="form-control" />
                                             <label class="form-label" for="password">Password</label>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
-                                            <input type="email" id="email" class="form-control" />
+                                            <input type="email" name="email" id="email" class="form-control" />
                                             <label class="form-label" for="email">email</label>
                                         </div>
                                     </div>
