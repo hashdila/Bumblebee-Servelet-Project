@@ -12,7 +12,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
+<div class="adminheader d-flex justify-content-center"></div>
+<h1>ADMIN PANEL</h1>
+</div>
+
 <%@include file="include/admin_navbar.jsp"%>
 
+<%--<%@include file="admin/addproduct.jsp"%>--%>
+
+<%--<%@include file="admin/updateproduct.jsp"%>--%>
+
+<%@include file="admin/viewproduct.jsp"%>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
