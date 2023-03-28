@@ -13,17 +13,17 @@
         </div>
     </div>
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Add Product</a>
+        <a class="navbar-brand" href="admin_home.jsp">Add Product</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Upade product</a>
+                    <a class="nav-link" href="adminupdate.jsp">Upade product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Delet product</a>
+                    <a class="nav-link" href="adminview&delet.jsp">view & Delet product</a>
                 </li>
 
                 <li class="nav-item">
