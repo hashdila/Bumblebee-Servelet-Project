@@ -33,7 +33,8 @@
             <div class="name d-flex flex-row-reverse">
 
                 <div class="run" style="width: 50%">
-                <p class="username" style="font-size: 20px; display: flex; justify-content: center;align-items: center; margin:0 auto; ">Dilan Nawarthna</p>
+                    <h4 class="fonts">Welcome <%=session.getAttribute("username")%></h4>
+
                 </div>
 
                 <div class="run" style="width: 50%">
@@ -53,6 +54,7 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Change Account</a></li>
+                <li><a class="dropdown-item" href="admin_home.jsp">admin</a></li>
             </ul>
 
 
