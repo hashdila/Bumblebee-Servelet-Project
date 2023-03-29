@@ -23,7 +23,7 @@
                     <a class="nav-link" href="adminupdate.jsp">Upade product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="adminview&delet.jsp">view & Delet product</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/view-products">view & Delet product</a>
                 </li>
 
                 <li class="nav-item">
