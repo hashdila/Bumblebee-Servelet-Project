@@ -25,6 +25,8 @@ import javax.servlet.http.HttpServletResponse;
 public class viewdata extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
+
+
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // handle POST requests here
@@ -63,7 +65,32 @@ public class viewdata extends HttpServlet {
             e.printStackTrace();
         }
 
+
+        // check if a product ID is specified for deletion
+        String deleteProductId = request.getParameter("deleteProductId");
+        if (deleteProductId != null) {
+            int productId = Integer.parseInt(deleteProductId);
+            deleteProduct(productId);
+            // redirect to the same page to refresh the list of products
+            response.sendRedirect(request.getContextPath() + "/view-products");
+            return;
+        }
         request.setAttribute("products", products);
         request.getRequestDispatcher("admin/viewproduct.jsp").forward(request, response);
+
+
+    }
+
+    private void deleteProduct(int productId) {
+        try {
+            Connection conn = DBConnction.getConn();
+            PreparedStatement statement = conn.prepareStatement("DELETE FROM products WHERE id = ?");
+            statement.setInt(1, productId);
+            statement.executeUpdate();
+            statement.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

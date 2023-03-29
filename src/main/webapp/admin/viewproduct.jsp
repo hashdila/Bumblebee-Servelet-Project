@@ -35,7 +35,7 @@
                         <th>Description</th>
                         <th>Category</th>
                         <th>Price</th>
-                        <%--                        <th>Image</th>--%>
+                        <th>Image</th>
                         <th>Dimensions</th>
                         <th>Weight</th>
                         <th>Color</th>
@@ -50,13 +50,14 @@
                             <td>${product.description}</td>
                             <td>${product.category}</td>
                             <td>${product.price}</td>
-                                <%--                            <td><img style="height: 100px" src="data:image/jpeg;base64,${product.imageBase64}"/></td>--%>
+                            <td><img src="data:image/png;base64,${product.image}" alt="Product Image"></td>
                             <td>${product.dimensions}</td>
                             <td>${product.weight}</td>
                             <td>${product.color}</td>
+                            <td><a href="delete-product?id=${product.id}">Delete</a></td>
                             <td>
                                 <a href="${pageContext.request.contextPath}/admin/addproduct.jsp?id=${product.id}"><i class="fa fa-pencil" style="color: black"></i></a>
-                                &nbsp;<a href="./delete-product?productId=${product.id}"><i class="fa fa-trash" style="color: red"></i></a>
+                                &nbsp;<a href="delete-Product?id=${product.id}"><i class="fa fa-trash" style="color: red"></i></a>
                             </td>
                         </tr>
                     </c:forEach>
