@@ -1,6 +1,7 @@
 package com.example.din;
 
 import java.math.BigDecimal;
+import java.util.Base64;
 
 public class product {
     private int id;
@@ -23,6 +24,13 @@ public class product {
         this.dimensions = dimensions;
         this.weight = weight;
         this.color = color;
+    }
+
+    public String getImageBase64() {
+        if (image == null) {
+            return null;
+        }
+        return Base64.getEncoder().encodeToString(image);
     }
 
     public int getId() {

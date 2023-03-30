@@ -76,7 +76,7 @@ public class viewdata extends HttpServlet {
             return;
         }
         request.setAttribute("products", products);
-        request.getRequestDispatcher("admin/viewproduct.jsp").forward(request, response);
+        request.getRequestDispatcher("include/cart_viewer.jsp").forward(request, response);
 
 
     }
