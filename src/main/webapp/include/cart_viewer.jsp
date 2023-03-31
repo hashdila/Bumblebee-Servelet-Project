@@ -72,7 +72,7 @@
         <div class="price">${product.price}</div>
         <div class="actions">
             <a href="/admin/addproduct?id=${product.id}">Edit</a>
-            <a href="?deleteProductId=${product.id}">Delete</a>
+            <a href="?delete-productId=${product.id}">Delete</a>
         </div>
     </div>
 </c:forEach>
