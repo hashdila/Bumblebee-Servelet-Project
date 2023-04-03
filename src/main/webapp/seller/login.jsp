@@ -62,7 +62,7 @@
 <%--                        </div>--%>
 <%--                    </div>--%>
                     <div class="form-outline mb-2">
-                        <input type="text" id="username" name="username" class="form-control form-control-lg"
+                        <input type="email" id="username" name="username" class="form-control form-control-lg"
                                placeholder="Enter username" />
                         <label class="form-label" for="username">Username</label>
                     </div>

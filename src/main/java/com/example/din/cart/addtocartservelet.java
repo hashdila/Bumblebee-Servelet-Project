@@ -26,11 +26,11 @@ public class addtocartservelet extends HttpServlet {
 
 
         HttpSession session = request.getSession();
-        if (session.getAttribute("userEmail") == null) {
-            response.sendRedirect("login.jsp");
+        if (session.getAttribute("email") == null) {
+            response.sendRedirect("seller/login.jsp");
         }else{
 
-            String userEmail = (String) session.getAttribute("userEmail");
+            String userEmail = (String) session.getAttribute("email");
 //        int userId = (int) session.getAttribute("userId");
             int productId = Integer.parseInt(request.getParameter("productId"));
             int quantity = Integer.parseInt(request.getParameter("quantity"));
@@ -59,7 +59,7 @@ public class addtocartservelet extends HttpServlet {
                     insertStmt.setInt(3, quantity);
                     insertStmt.executeUpdate();
                 }
-                response.sendRedirect("viewCart");
+                response.sendRedirect("customer/viewcart.jsp");
             } catch (SQLException e) {
                 e.printStackTrace();
                 response.sendRedirect("error.jsp");

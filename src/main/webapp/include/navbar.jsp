@@ -46,7 +46,7 @@
                 </div>
 
                 <div>
-                    <a href="#"><i class="fa-solid fa fa-shopping-cart fa-2x" ></i></a>
+                    <a href="viewCart"><i class="fa-solid fa fa-shopping-cart fa-2x" ></i></a>
                 </div>
             </div>
 

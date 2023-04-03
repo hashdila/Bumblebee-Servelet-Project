@@ -1,12 +1,12 @@
-package com.example.din.cart;
+package com.example.din.orders;
 
 
 
 
 import com.example.din.DBConnction;
 import com.example.din.Product;
-
-import com.mysql.cj.x.protobuf.MysqlxDatatypes;
+import com.example.din.cart.shoppingcart;
+import com.example.din.cart.shoppingcartitems;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -26,9 +26,8 @@ import java.util.List;
 import static com.example.din.Product.closeResources;
 
 
-
-@WebServlet("/viewCart")
-public class viewcart extends HttpServlet {
+@WebServlet("/orderConfirmation")
+public class ordercomform extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -37,7 +36,7 @@ public class viewcart extends HttpServlet {
         HttpSession session = request.getSession();
         String userEmail = (String) session.getAttribute("email");
         if (userEmail == null) {
-            response.sendRedirect("seller/login.jsp");
+            response.sendRedirect("home.jsp");
             return;
         } else {
 
@@ -75,11 +74,7 @@ public class viewcart extends HttpServlet {
             request.setAttribute("items", items);
             request.setAttribute("total", total); // Add the total price to the request
 
-            // retrieve cart items from database
-
-            session.setAttribute("cartItems", items);
-
-            request.getRequestDispatcher("customer/viewcart.jsp").forward(request, response);
+            request.getRequestDispatcher("customer/checkout.jsp").forward(request, response);
         }
 
     }

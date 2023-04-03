@@ -46,7 +46,7 @@ public class sellerlogin extends HttpServlet {
                 Connection conn = DBConnction.getConn();
 
                 // Create a prepared statement for the SELECT query
-                String sql = "SELECT * FROM customers WHERE username = ?";
+                String sql = "SELECT * FROM customers WHERE email = ?";
                 PreparedStatement pstmt = conn.prepareStatement(sql);
                 pstmt.setString(1, username);
                 ResultSet rs = pstmt.executeQuery();
@@ -60,7 +60,7 @@ public class sellerlogin extends HttpServlet {
 
                 // Retrieve the hashed password from the database
                 String hashedPassword = rs.getString("password");
-                String email = rs.getString("email");
+                String userName = rs.getString("username");
 
                 // Hash the user's password using SHA-256
                 String hashedInputPassword = hashPassword(password);
@@ -74,8 +74,8 @@ public class sellerlogin extends HttpServlet {
 
                 // Store the user's information in a session
                 HttpSession session = request.getSession();
-                session.setAttribute("username", username);
-                session.setAttribute("email", email);
+                session.setAttribute("username", userName);
+                session.setAttribute("email", username);
 
                 // Close the database connection
                 rs.close();
