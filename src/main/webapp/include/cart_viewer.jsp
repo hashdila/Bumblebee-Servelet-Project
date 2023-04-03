@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
@@ -71,8 +72,8 @@
         <p><strong>Color:</strong> ${product.color}</p>
         <div class="price">${product.price}</div>
         <div class="actions">
-            <a href="/admin/addproduct?id=${product.id}">Edit</a>
-            <a href="?delete-productId=${product.id}">Delete</a>
+
+            <a href="productdetails.jsp?productId=${product.id}">Add to cart</a>
         </div>
     </div>
 </c:forEach>

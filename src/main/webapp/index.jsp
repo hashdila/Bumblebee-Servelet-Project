@@ -12,6 +12,12 @@
 
 </head>
 <body>
+
+<%
+    response.sendRedirect("cart-view");
+%>
+
+
 <% Connection conn= DBConnction.getConn();    out.print(conn);%>
 
 <%@include file="homepage.jsp"%>

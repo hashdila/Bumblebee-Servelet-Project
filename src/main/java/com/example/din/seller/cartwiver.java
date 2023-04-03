@@ -1,6 +1,6 @@
 package com.example.din.seller;
 
-import com.example.din.product;
+import com.example.din.Product;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,9 +20,9 @@ public class cartwiver extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
-            List<product> products = productDAO.getAllProducts();
+            List<Product> products = productDAO.getAllProducts();
             request.setAttribute("products", products);
-            request.getRequestDispatcher("include/cart_viewer.jsp").forward(request, response);
+            request.getRequestDispatcher("homepage.jsp").forward(request, response);
         } catch (SQLException e) {
             e.printStackTrace();
             // Handle the error case

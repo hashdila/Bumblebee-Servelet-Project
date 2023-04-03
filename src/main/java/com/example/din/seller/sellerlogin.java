@@ -60,6 +60,7 @@ public class sellerlogin extends HttpServlet {
 
                 // Retrieve the hashed password from the database
                 String hashedPassword = rs.getString("password");
+                String email = rs.getString("email");
 
                 // Hash the user's password using SHA-256
                 String hashedInputPassword = hashPassword(password);
@@ -74,6 +75,7 @@ public class sellerlogin extends HttpServlet {
                 // Store the user's information in a session
                 HttpSession session = request.getSession();
                 session.setAttribute("username", username);
+                session.setAttribute("email", email);
 
                 // Close the database connection
                 rs.close();

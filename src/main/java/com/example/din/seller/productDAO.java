@@ -1,7 +1,8 @@
 package com.example.din.seller;
 
 import com.example.din.DBConnction;
-import com.example.din.product;
+import com.example.din.Product;
+
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -12,8 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class productDAO {
-    public List<product> getAllProducts() throws SQLException {
-        List<product> products = new ArrayList<>();
+    public List<Product> getAllProducts() throws SQLException {
+        List<Product> products = new ArrayList<>();
 
         String sql = "SELECT * FROM products";
         try (Connection conn = DBConnction.getConn();
@@ -31,7 +32,7 @@ public class productDAO {
                 String weight = result.getString("weight");
                 String color = result.getString("color");
 
-                product product = new product(id, name, description, category, price, image, dimensions, weight, color);
+                Product product = new Product(id, name, description, category, price, image, dimensions, weight, color);
                 products.add(product);
             }
         }

@@ -33,7 +33,7 @@
             <div class="name d-flex flex-row-reverse">
 
                 <div class="run" style="width: 50%">
-                    <h4 class="fonts">Welcome <%=session.getAttribute("username")%></h4>
+                    <h4 class="fonts">Welcome <%=session.getAttribute("email")%></h4>
 
                 </div>
 

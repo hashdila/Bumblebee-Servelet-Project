@@ -2,7 +2,7 @@ package com.example.din.seller;
 
 
 import com.example.din.DBConnction;
-import com.example.din.product;
+import com.example.din.Product;
 
 
 import java.io.IOException;
@@ -35,7 +35,7 @@ public class viewdata extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        List<product> products = new ArrayList<product>();
+        List<Product> products = new ArrayList<Product>();
 
         // retrieve all products from database
         String sql = "SELECT * FROM products";
@@ -55,7 +55,7 @@ public class viewdata extends HttpServlet {
                 String weight = result.getString("weight");
                 String color = result.getString("color");
 
-                product product = new product(id, name, description, category, price, image, dimensions, weight, color);
+                Product product = new Product(id, name, description, category, price, image, dimensions, weight, color);
                 products.add(product);
             }
 
