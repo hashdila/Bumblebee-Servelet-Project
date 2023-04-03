@@ -11,7 +11,7 @@ public class DBConnction {
     public static Connection getConn() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bumblebee", "root", "");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bumble_bee", "root", "");
         } catch (Exception e) {
             e.printStackTrace();
         }
