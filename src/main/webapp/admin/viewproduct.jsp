@@ -17,7 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
-<div class="d-flex">
+
+
+
+
+<div class="d-flex" style="max-width: 1200px; margin: auto;">
 
     <div class="container-fluid d-block" style="width: 100%; height:30%">
 
@@ -26,7 +30,7 @@
             <div class="d-block" style="margin-left: 5%; margin-top: 5%">
 
                 <h1 >Products</h1>
-                <a href="${pageContext.request.contextPath}/admin_home.jsp">Add Product</a>
+
                 <table class="table">
                     <thead>
                     <tr>
@@ -40,6 +44,7 @@
                         <th>Weight</th>
                         <th>Color</th>
                         <th>Action</th>
+                        <th><a href="${pageContext.request.contextPath}/admin_home.jsp">Add Product</a></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -55,10 +60,7 @@
                             <td>${product.weight}</td>
                             <td>${product.color}</td>
                             <td><a href="delete-product?id=${product.id}">Delete</a></td>
-                            <td>
-                                <a href="${pageContext.request.contextPath}/admin/addproduct.jsp?id=${product.id}"><i class="fa fa-pencil" style="color: black"></i></a>
-                                &nbsp;<a href="delete-product?id=${product.id}"><i class="fa fa-trash" style="color: red"></i></a>
-                            </td>
+                            <td></td>
                         </tr>
                     </c:forEach>
                     </tbody>
@@ -67,6 +69,13 @@
 
             </div>
         </div>
+
+
+
+
+
+
+
             <% Connection conn= DBConnction.getConn();
     out.print(conn);%>
 

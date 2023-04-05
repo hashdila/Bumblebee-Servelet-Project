@@ -53,7 +53,8 @@
                 <li><a class="dropdown-item" href="./seller/login.jsp">Customer Login</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Change Account</a></li>
-                <li><a class="dropdown-item" href="admin_home.jsp">admin</a></li>
+
+                <li><a class="dropdown-item" href="admin/adlogin.jsp">admin</a></li>
             </ul>
 
 

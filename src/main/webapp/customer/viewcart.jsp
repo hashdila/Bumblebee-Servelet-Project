@@ -13,8 +13,15 @@
 <body>
 <jsp:include page="../include/navbar.jsp" />
 
+
+
 <div class="container-fluid" style="max-width: 1200px;">
-    <div style="text-align: center; margin-top: 1%; margin-bottom: 1%"><h1>Your Cart</h1></div>
+    <div style="text-align: center; margin-top: 1%; margin-bottom: 1%"><h1>My Cart</h1></div>
+
+    <div style="text-align:right; align-content: end; justify-content: right; margin-bottom: 1%">
+        <a class="text" href="orderConfirmation"><button class="btn" style="background-color: blue; color: white"><b>Checkout</b></button></a>
+    </div>
+
     <table class="table" border="1">
         <thead class="thead-dark">
         <tr>
@@ -53,16 +60,14 @@
         </c:forEach>
 
         <tr>
-            <td class="bg-dark" style="text-align: center; color: white" colspan="5"><h3>TOTAL</h3></td>
+            <td class="bg-primary" style="text-align: center; color: white" colspan="5"><h3>TOTAL</h3></td>
             <td style="text-align: right" colspan="2"><b>LKR ${total}.00</b></td>
             <td></td>
         </tr>
 
     </table>
 
-    <div style="text-align:right; align-content: end; justify-content: right; margin-bottom: 1%">
-        <a class="text" href="orderConfirmation"><button class="btn" style="background-color: #a2822a; color: white"><b>Checkout</b></button></a>
-    </div>
+
 
 
     <!-- Confirmation dialog -->

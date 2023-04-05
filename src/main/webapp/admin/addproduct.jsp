@@ -7,7 +7,7 @@
 --%>
 
 
-<div class="container mt-5">
+<div class="container mt-5" style="max-width: 1200px; margin: auto;">
     <h1>Add Product Details</h1>
     <form action="./AddProductServlet" method="POST" enctype="multipart/form-data">
         <fieldset>
