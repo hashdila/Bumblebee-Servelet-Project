@@ -75,6 +75,13 @@ public class sellerregistration extends HttpServlet {
 
             // Display a message to the user indicating that the registration was successful
             response.getWriter().println("Registration successful!");
+
+            response.setContentType("text/html;charset=UTF-8");
+            PrintWriter out = response.getWriter();
+            out.println("<script>alert('Register successfully!')</script>");
+            out.println("<meta http-equiv='refresh' content='0; URL=./seller/login.jsp'>");
+
+//            response.sendRedirect("./seller/login.jsp");
         } catch (Exception ex) {
             // Display an error message to the user
             response.getWriter().println("Registration failed. Please try again later.");

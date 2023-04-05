@@ -109,10 +109,10 @@
     </div>
 
     <div class="container-fluid d-block" style="max-width: 50%; margin-top: 5%">
-        <h2><%= productName %></h2>
-        <p><%= productDescription %></p>
-        <p>Product Weight: <%= productWeight %> KG</p>
-        <p><b>LKR <%= productPrice %></b></p>
+        <h2>Name: <%= productName %></h2>
+        <p>Descripyion: <%= productDescription %></p>
+        <p>Product Weight: <%= productWeight %> g</p>
+        <p><b>LKR <%= productPrice %>.00</b></p>
 
 
 
@@ -121,7 +121,7 @@
             <input type="hidden" name="productId" id="productId" value="<%= productID %>" />
             <div class="d-flex">
                 <input class="form-control"  type="number" name="quantity" id="quantity" value="1" style="width: 75px; margin-right: 25px"/>
-                <button class="btn btn-outline-warning"  type="submit">Add to Cart</button>
+                <button class="btn btn-outline-primary"  type="submit">Add to Cart</button>
             </div>
         </form>
 

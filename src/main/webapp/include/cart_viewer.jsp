@@ -63,7 +63,7 @@
 <h1>Product List</h1>
 <c:forEach var="product" items="${products}">
     <div class="card">
-        <img src="data:image/jpeg;base64,${product.imageBase64}" alt="${product.name}">N
+        <img src="data:image/jpeg;base64,${product.imageBase64}" alt="${product.name}">
         <h3>${product.name}</h3>
         <p>${product.description}</p>
         <p><strong>Category:</strong> ${product.category}</p>

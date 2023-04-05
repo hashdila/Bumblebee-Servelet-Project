@@ -5,7 +5,7 @@
   Time: 12:36 PM
   To change this template use File | Settings | File Templates.
 --%>
-<nav class="navbar navbar-expand-lg bg-light  " style="max-width: 1200px; margin: auto;">
+<nav class="navbar navbar-expand-lg bg-info  " style="max-width: 1200px; margin: auto;">
     <div class="container-fluid align-middle">
         <a class="navbar-brand" href="#">HOME</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,25 +17,11 @@
                     <a class="nav-link active" aria-current="page" href="#">Company</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./contacr.jsp">Brands</a>
+                    <a class="nav-link" href="./contacr.jsp">Contact-Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href=cart-view?id=${product.id}">">Product</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link ">Disabled</a>
-                </li>
+
+
+
             </ul>
             <div class="serching d-flex">
                 <div class="se" style="padding-right: 10px;">
@@ -46,7 +32,7 @@
                 </div>
 
                 <div>
-                    <a href="viewCart"><i class="fa-solid fa fa-shopping-cart fa-2x" ></i></a>
+                    <a href="${pageContext.request.contextPath}/viewCart"><i class="fa-solid fa fa-shopping-cart fa-2x " ></i></a>
                 </div>
             </div>
 

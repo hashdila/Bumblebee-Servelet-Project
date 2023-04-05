@@ -84,7 +84,7 @@ public class sellerlogin extends HttpServlet {
 
                 // Redirect the user to the home page
 //                response.getWriter().println("login sucseefull");
-                response.sendRedirect(request.getContextPath() + "/seller/register.jsp");
+                response.sendRedirect(request.getContextPath() + "/cart-view");
             } catch (Exception ex) {
                 // Display an error message to the user
                 response.getWriter().println("Login failed. Please try again later.");

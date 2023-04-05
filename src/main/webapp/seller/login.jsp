@@ -22,15 +22,16 @@
 
 <section class="vh-100 " style="max-width: 1200px; margin:0 auto" >
     <div class="container-fluid h-custom">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <a href="../index.jsp"><button type="button" class="btn-close btn-close-primary " aria-label="Close"></button></a>
-        </div>
+
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-md-9 col-lg-6 col-xl-5">
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
                      class="img-fluid" alt="Sample image">
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="../index.jsp"><button type="button" class="btn-close btn-close-primary " aria-label="Close"></button></a>
+                </div>
                 <form action="../login" method="post">
 <%--                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">--%>
 <%--                        <p class="lead fw-normal mb-0 me-3">Sign in with</p>--%>
@@ -96,29 +97,5 @@
             </div>
         </div>
     </div>
-    <div
-            class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
-        <!-- Copyright -->
-        <div class="text-white mb-3 mb-md-0">
-            Copyright © 2020. All rights reserved.
-        </div>
-        <!-- Copyright -->
 
-        <!-- Right -->
-        <div>
-            <a href="#!" class="text-white me-4">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#!" class="text-white me-4">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#!" class="text-white me-4">
-                <i class="fab fa-google"></i>
-            </a>
-            <a href="#!" class="text-white">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>
-        <!-- Right -->
-    </div>
 </section>

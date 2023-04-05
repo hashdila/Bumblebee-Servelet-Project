@@ -7,7 +7,7 @@
 --%>
 <!-- Remove the container if you want to extend the Footer to full width. -->
 <footer class=" bg-info" style="margin: auto; max-width: 1200px;">
-    <div class="container bg-warning " style="margin: auto; max-width: 1200px;">
+    <div class="container bg-secondary " style="margin: auto; max-width: 1200px;">
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-6" style="justify-items: center;">
                 <div>

@@ -59,7 +59,7 @@ public class addtocartservelet extends HttpServlet {
                     insertStmt.setInt(3, quantity);
                     insertStmt.executeUpdate();
                 }
-                response.sendRedirect("customer/viewcart.jsp");
+                response.sendRedirect("viewCart");
             } catch (SQLException e) {
                 e.printStackTrace();
                 response.sendRedirect("error.jsp");

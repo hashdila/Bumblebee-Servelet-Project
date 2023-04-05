@@ -41,7 +41,6 @@ public class viewcart extends HttpServlet {
             return;
         } else {
 
-
             List<shoppingcartitems> items = new ArrayList<>();
 
             Connection conn = null;

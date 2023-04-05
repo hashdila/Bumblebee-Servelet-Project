@@ -8,15 +8,15 @@
 
 <!-- Navbar -->
 
-<div class="header-menu bg-warning d-flex " style="height: auto; margin: auto; max-width: 1200px ">
+<div class="header-menu d-flex " style="height: auto; margin: auto; max-width: 1200px ">
 
-    <div class="hd1 bg-info"style="height: auto; width: 10%;">
+    <div class="hd1 "style="height: auto; width: 10%;">
         <div class="image justify-content-center align-items-center" style="width: 100px; height: auto;margin:0 auto;">
             <a class="nav-link" href="#"><img src="img/img1.png" class="  "style="width: 80px;  display: flex; justify-content: center;align-items: center;"></img></a>
         </div>
     </div>
 
-    <div class="hd1 bg-light"style="height: auto; width: 25%;">
+    <div class="hd1 "style="height: auto; width: 25%;">
         <!-- <p class="company-name" style="font-size: 30px;">Bumble Bee</p> -->
         <figure class="text-center">
             <blockquote class="blockquote">
@@ -28,8 +28,8 @@
         </figure>
     </div>
 
-    <div class="hd1 bg-info d-flex"style="height: 60px; width: 65%;">
-        <div class="profil bg-danger" style="height: auto; width: 92%;">
+    <div class="hd1  d-flex"style="height: 60px; width: 65%;">
+        <div class="profil " style="height: auto; width: 92%;">
             <div class="name d-flex flex-row-reverse">
 
                 <div class="run" style="width: 50%">
@@ -39,7 +39,7 @@
 
                 <div class="run" style="width: 50%">
                     <marquee width="100%" direction="left" height="auto">
-                        This is a sample scrolling text that has scrolls texts to right.
+                       "buy first, pay later"
                     </marquee>
                 </div>
 
@@ -50,9 +50,8 @@
                 <i class="fa-solid fa fa-user fa-3x" ></i></a>
 
             <ul class="dropdown-menu" style="margin-right: 100px;">
-                <li><a class="dropdown-item" href="./seller/login.jsp">Login</a></li>
+                <li><a class="dropdown-item" href="./seller/login.jsp">Customer Login</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Change Account</a></li>
                 <li><a class="dropdown-item" href="admin_home.jsp">admin</a></li>
             </ul>
