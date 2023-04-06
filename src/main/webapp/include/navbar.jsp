@@ -25,8 +25,8 @@
             </ul>
             <div class="serching d-flex">
                 <div class="se" style="padding-right: 10px;">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form action="${pageContext.request.contextPath}/search" method="get" class="d-flex" role="search">
+                        <input class="form-control me-2" id="keyword" name="keyword" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
